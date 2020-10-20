@@ -11,7 +11,8 @@ LABEL org.opencontainers.image.authors="lstcml" \
 ADD app /app
 ADD config /config
 RUN mv /app/addusr /usr/bin && \
-    mv /app/delusr /usr/bin
+    mv /app/delusr /usr/bin && \
+    chmod 777 /app/run.sh
 
 # 工作目录
 WORKDIR /data
