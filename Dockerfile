@@ -19,6 +19,5 @@ WORKDIR /data
 
 # 挂载目录
 VOLUME /data
-EXPOSE 8080
 # 运行
 CMD ["/app/run.sh"]
